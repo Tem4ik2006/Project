@@ -46,7 +46,551 @@ const blogData = [
         readTime: "10 мин",
         views: 1890,
         likes: 567,
-        fullContent: "Полный текст статьи о Mercedes-AMG SL 63..."
+        fullContent: `<header class="article-header-content">
+    
+</header>
+
+<div class="article-body">
+    <h1>Тест-драйв Mercedes-AMG SL63 2022: термоядерный реактор</h1>
+    
+    <div class="article-subtitle">
+        <div class="author-info">
+            <span><i class="fas fa-user"></i> Автор: Никита Рамм</span>
+            <span><i class="fas fa-tachometer-alt"></i> Категория: Тест-драйвы</span>
+            <span><i class="fas fa-star"></i> Рейтинг: 9.2/10</span>
+        </div>
+    </div>
+    
+    <div class="intro-paragraph">
+        <p>Мерседес Еллинек и Карл Бенц существовали в другую эпоху, нежели Ханс Вернер Ауфрехт и Эрхард Мельхер, но Mercedes-AMG SL63 2022 года — это автомобиль, который им всем очень понравился бы. Если бы их жизни пересеклись, эти ключевые персонажи истории «Серебряной стрелы» с удовольствием прокатились бы вместе на этом новом спорткаре с откидным верхом 2+2.</p>
+    </div>
+    
+    <div class="main-car-image">
+        <img src="AMG-SL-63/dvig.jpg" alt="Mercedes-AMG SL63 2022 в движении">
+        <p class="image-caption">Mercedes-AMG SL63 2022 — самый высокопроизводительный родстер в истории SL-класса</p>
+    </div>
+    
+    <div class="historical-context">
+        <h2><i class="fas fa-history"></i> Исторический контекст: от Sport Leicht до AMG</h2>
+        <div class="context-content">
+            <div class="context-text">
+                <p>Предыдущие версии Sport Leicht были удобными гранд-турами, которых время от времени отправляли в тренировочный лагерь AMG. Но для последней модели SL63 преобразование в AMG было на первом месте, и оно оказалось выдающимся.</p>
+                <p>Автомобиль ощетинивается бешеным острием, жертвуя частью своего традиционного комфорта в угоду динамизма. В результате получился родстер, который больше похож на AMG, чем на Mercedes-Benz, и, бесспорно, является самым высокопроизводительным SL за всю историю.</p>
+            </div>
+            <div class="context-image">
+                <img src="AMG-SL-63/history.jpg" alt="Историческое развитие SL-класса">
+            </div>
+        </div>
+    </div>
+    
+    <div class="engine-performance">
+        <h2><i class="fas fa-fire"></i> Мускулы Аффальтербаха: двигатель V8</h2>
+        
+        <div class="engine-highlight">
+         <h3>Сердце SL63: M177 4.0L V8 Bi-Turbo</h3>
+               
+            <div class="engine-badge">
+           
+           
+         <div class="context-image">
+                <img src="AMG-SL-63/engine.jpg" alt="Историческое развитие SL-класса">
+            </div>
+            </div>
+            <div class="engine-specs">
+            
+                <div class="spec">
+                    <span class="spec-label">Мощность</span>
+                    <span class="spec-value">577 л.с.</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-label">Крутящий момент</span>
+                    <span class="spec-value">800 Нм</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-label">Объем</span>
+                    <span class="spec-value">4.0 л</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-label">Конфигурация</span>
+                    <span class="spec-value">V8 с двойным турбо</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="engine-description">
+            <p>SLS, GT, One, а теперь и SL: то, что он пополнил ряды эксклюзивных моделей AMG, подчеркивает спортивные намерения новой модели поколения R232. SL43 начального уровня линейки также является лидером движения AMG к электрификации, но 4,0-литровый двигатель V-8 с двойным турбонаддувом M177 остается самым привлекательным вариантом.</p>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Модель</th>
+                            <th>Мощность</th>
+                            <th>Крутящий момент</th>
+                            <th>Особенности</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>SL55 AMG</strong></td>
+                            <td>469 л.с.</td>
+                            <td>700 Нм</td>
+                            <td>Базовая версия V8</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SL63 AMG</strong></td>
+                            <td>577 л.с.</td>
+                            <td>800 Нм</td>
+                            <td>Турбокомпрессоры большего размера</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="acceleration-test">
+        <h2><i class="fas fa-rocket"></i> Динамика: термоядерный разгон</h2>
+        
+        <div class="acceleration-content">
+            <div class="acceleration-text">
+                <p>Девятиступенчатая автоматическая коробка передач MCT передает мощность в систему полного привода Mercedes 4Matic — комбинация, никогда ранее не встречавшаяся в SL. Эти элементы объединяются, чтобы обеспечить свирепые старты с невероятной легкостью.</p>
+                
+                <div class="test-results">
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-stopwatch"></i>
+                        </div>
+                        <h4>0-100 км/ч</h4>
+                        <p class="result-value">3.1 сек</p>
+                        <p class="result-note">Рекорд для SL</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>0-160 км/ч</h4>
+                        <p class="result-value">7.3 сек</p>
+                        <p class="result-note">На 0.5 сек быстрее SL65 Black</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h4>1/4 мили</h4>
+                        <p class="result-value">11.3 сек</p>
+                        <p class="result-note">Конечная скорость 199.5 км/ч</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-icon">
+                            <i class="fas fa-gauge-high"></i>
+                        </div>
+                        <h4>Макс. скорость</h4>
+                        <p class="result-value">320 км/ч</p>
+                        <p class="result-note">Электронное ограничение</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="acceleration-note">
+                <div class="note-content">
+                    <h4><i class="fas fa-trophy"></i> Историческое сравнение</h4>
+                    <p>Хотя в прошлом существовали более мощные и богатые крутящим моментом модели SL, ни одна из них не была быстрее новой SL63. Самым близким был 3,5-секундный спринт предыдущего SL63.</p>
+                    <p>Безупречное сцепление с дорогой, обеспечиваемое новой системой SL63 4Matic, является решающим фактором.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-section">
+            <h3><i class="fas fa-camera"></i> Галерея Mercedes-AMG SL63 2022</h3>
+            <div class="image-grid">
+                <div class="grid-item">
+                    <img src="AMG-SL-63/pered.jpg" alt="Mercedes-AMG SL63 вид спереди">
+                </div>
+                <div class="grid-item">
+                    <img src="AMG-SL-63/bok.jpg" alt="Mercedes-AMG SL63 вид сбоку">
+                </div>
+                <div class="grid-item">
+                    <img src="AMG-SL-63/inter.jpg" alt="Mercedes-AMG SL63 интерьер">
+                </div>
+                <div class="grid-item">
+                    <img src="AMG-SL-63/panel.jpg" alt="Mercedes-AMG SL63 панель">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="transmission-review">
+        <h2><i class="fas fa-cogs"></i> Трансмиссия: 9-ступенчатая MCT</h2>
+        
+        <div class="transmission-content">
+            <div class="transmission-text">
+                <p>Девятиступенчатая коробка передач MCT с гидротрансформатором обеспечивает мгновенные переключения с убедительным толчком при пониженной мощности. Однако в некоторых ситуациях автоматический выбор передач может быть непоследовательным, делая ручной режим предпочтительнее для эффективной езды.</p>
+                
+                <div class="transmission-features">
+                    <div class="feature">
+                        <h4><i class="fas fa-check"></i> Преимущества</h4>
+                        <ul>
+                            <li>Мгновенные переключения передач</li>
+                            <li>Агрессивные понижения передач</li>
+                            <li>Плавная работа в Comfort режиме</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature">
+                        <h4><i class="fas fa-times"></i> Недостатки</h4>
+                        <ul>
+                            <li>Иногда непоследовательный автомат</li>
+                            <li>Легкое заикание при старте</li>
+                            <li>Ручной режим предпочтительнее для активной езды</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="braking-performance">
+        <h2><i class="fas fa-stop-circle"></i> Торможение: карбон-керамические диски</h2>
+        
+        <div class="braking-content">
+            <div class="braking-text">
+                <h3>Огромные дополнительные карбон-керамические тормоза SL63 2022 года служат достойным противовесом его бешеному ускорению.</h3>
+                
+                <div class="braking-stats">
+                    <div class="braking-stat">
+                        <p class="stat-label">Тормозной путь 100-0 км/ч</p>
+                        <p class="stat-value">32 метра</p>
+                    </div>
+                    
+                    <div class="braking-stat">
+                        <p class="stat-label">Чувствительность педали</p>
+                        <p class="stat-value">Короткий, прогрессивный ход</p>
+                    </div>
+                </div>
+                
+                <p>Тормозной путь в 32 метра со скорости 100 км/ч действительно впечатляет, хотя и не является рекордным для SL или AMG. Тем не менее, эти тормоза кажутся фантастическими: ход педали короткий, чувствительный и удивительно прогрессивный.</p>
+            </div>
+            
+            <div class="braking-image">
+                <img src="AMG-SL-63/karbontormoz.jpg" alt="Карбон-керамические тормоза SL63">
+                <p class="image-caption">Карбон-керамические тормоза стоимостью $8,950 — опция, которая того стоит</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="handling-section">
+        <h2><i class="fas fa-road"></i> Управляемость: рождение спортивного родстера</h2>
+        
+        <div class="handling-intro">
+            <p>Кузов нового SL, изготовленный из алюминия, стали, магния и углеродного композита намного лучше, чем у предыдущей модели, выдерживает скручивающие и изгибающие усилия. Эта архитектура настолько мощная, что ее будет использовать AMG GT следующего поколения.</p>
+        </div>
+        
+        <div class="handling-performance">
+            <div class="performance-metrics">
+                <div class="metric-card">
+                    <h4><i class="fas fa-weight-hanging"></i> Боковая перегрузка</h4>
+                    <p class="metric-value">1.03 g</p>
+                    <p class="metric-note">Среднее значение до заноса</p>
+                </div>
+                
+                <div class="metric-card">
+                    <h4><i class="fas fa-redo-alt"></i> Фигура "восьмерка"</h4>
+                    <p class="metric-value">23.6 сек</p>
+                    <p class="metric-note">Средняя перегрузка 0.87 g</p>
+                </div>
+                
+                <div class="metric-card">
+                    <h4><i class="fas fa-car-side"></i> Сравнение с AMG GT S</h4>
+                    <p class="metric-value">+0.4 сек</p>
+                    <p class="metric-note">Разница на восьмерке</p>
+                </div>
+            </div>
+            
+            <div class="handling-description">
+                <p>На площадке для дрифта SL63 демонстрировал боковую перегрузку до заноса в среднем 1.03 g. Различные тесты AMG GT S варьировались от 1.03 до 1.09 g. SL63 делает круг по траектории восьмерки за 23.6 секунды при средней перегрузке 0.87 g.</p>
+                
+                <div class="tires-info">
+                    <h4><i class="fas fa-tire"></i> Шины и колеса</h4>
+                    <p>Michelin Pilot Sport 4S ZR: 275/35 спереди и 305/30 сзади на 21-дюймовых колесах</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="suspension-system">
+            <h3><i class="fas fa-car-bump"></i> Подвеска AMG Active Ride Control</h3>
+            <div class="suspension-content">
+                <p>Подвеска AMG Active Ride Control, которая заменяет стабилизаторы поперечной устойчивости взаимосвязанными гидравлическими линиями, сохраняет SL63 в высшей степени собранным и влияет на качество езды. Исчезло плавное скольжение, которое делало прошлые модели SL совершенными. Решительная жесткость занимает свое место.</p>
+                
+                <div class="suspension-comparison">
+                    <div class="comparison-item">
+                        <h4>Предыдущий SL</h4>
+                        <p>Плавное скольжение, комфорт в приоритете</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Новый SL63</h4>
+                        <p>Решительная жесткость, динамика в приоритете</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="driving-experience">
+        <h2><i class="fas fa-steering-wheel"></i> Впечатления от вождения</h2>
+        
+        <div class="experience-points">
+            <div class="point-card">
+                <h3><i class="fas fa-balance-scale"></i> Частично крейсер, частично спорт</h3>
+                <p>Несмотря на дикость, SL63 оснащен материалами, технологиями и удобствами, которые варьируются от ослепительных до изысканных. Как бы это ни было неприятно для традиционалистов Mercedes-Benz, управляемость SL63 порадует энтузиастов, чьи маршруты Grand Touring оптимизированы под стабильную скорость.</p>
+            </div>
+            
+            <div class="point-card">
+                <h3><i class="fas fa-weight"></i> Размер и масса</h3>
+                <p>SL63 нельзя отнести к элитным спортивным автомобилям — несмотря на его рвение AMG, тусклый слой Mercedes остается. Каким бы продвинутым ни было шасси, ничто не скрывает его размеры или снаряженную массу в 1927 кг. Ни рулевое управление, ни двигатель, ни трансмиссия не столь чувствительны.</p>
+            </div>
+            
+            <div class="point-card">
+                <h3><i class="fas fa-couch"></i> Комфорт и удобства</h3>
+                <p>Никогда еще не было таких передних сидений, которые так решительно поддерживают и так энергично массируют, обдувая теплым воздухом шеи своих пассажиров. Эти предметы роскоши соответствуют ожиданиям от чего-то столь величественного в созвездии трехконечных звезд.</p>
+            </div>
+        </div>
+        
+        <div class="interior-gallery">
+            <h3><i class="fas fa-chair"></i> Интерьер и технологии</h3>
+            <div class="interior-grid">
+                <div class="interior-item">
+                    <img src="AMG-SL-63/rule.png" alt="Интерьер SL63">
+                    <p>Цифровая приборная панель</p>
+                </div>
+                <div class="interior-item">
+                    <img src="AMG-SL-63/display.jpg" alt="Системы мультимедиа">
+                    <p>Сенсорный экран с регулируемым наклоном</p>
+                </div>
+            </div>
+            
+            <div class="tech-critique">
+                <h4><i class="fas fa-exclamation-triangle"></i> Критика интерфейса</h4>
+                <p>Даже за огромную сумму нельзя купить несколько физических кнопок, которые устранили бы необходимость копаться в цифровых меню, чтобы найти основные операции, не в последнюю очередь поднятие и опускание складного мягкого верха.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pricing-section">
+        <h2><i class="fas fa-tag"></i> Цена и оборудование</h2>
+        
+        <div class="pricing-content">
+            <div class="price-breakdown">
+                <div class="price-item base">
+                    <h4>Базовая цена</h4>
+                    <p class="price">$180,450</p>
+                </div>
+                
+                <div class="price-item options">
+                    <h4>Опции тестового автомобиля</h4>
+                    <ul>
+                        <li>Гиперкерамическая краска: <strong>$1,750</strong></li>
+                        <li>Аэродинамический пакет: <strong>$2,850</strong></li>
+                        <li>Аудиосистема Burmester: <strong>$4,500</strong></li>
+                        <li>Карбон-керамические тормоза: <strong>$8,950</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="price-item total">
+                    <h4>Общая стоимость</h4>
+                    <p class="price">$212,585</p>
+                </div>
+            </div>
+            
+            <div class="equipment-note">
+                <p>Несмотря на высокую цену, такие элементы, как гениальный дисплей, устойчивые полуавтономные ассистенты и сенсорный экран с регулируемым наклоном, сочетают функциональность и простоту эксплуатации.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="technical-specs">
+        <h2><i class="fas fa-clipboard-list"></i> Технические характеристики</h2>
+        
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Mercedes-AMG SL 63 4Matic+ 2022</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Базовая цена</td>
+                    <td>$180,450</td>
+                </tr>
+                <tr>
+                    <td>Рыночная цена тестового авто</td>
+                    <td>$212,585</td>
+                </tr>
+                <tr>
+                    <td>Компоновка</td>
+                    <td>Переднемоторный, полноприводный, 2-местный, 2-дверный кабриолет</td>
+                </tr>
+                <tr>
+                    <td>Двигатель</td>
+                    <td>4,0-литровый Твин-турбо DOHC с прямым впрыском, 32-клапанный 90-градусный V-8</td>
+                </tr>
+                <tr>
+                    <td>Мощность</td>
+                    <td>577 л.с. при 5500 об/мин</td>
+                </tr>
+                <tr>
+                    <td>Крутящий момент (SAE NET)</td>
+                    <td>800 Нм при 2500 оборотах в минуту</td>
+                </tr>
+                <tr>
+                    <td>Трансмиссия</td>
+                    <td>9-ступенчатая автоматическая</td>
+                </tr>
+                <tr>
+                    <td>Снаряженная масса</td>
+                    <td>1922 кг (распределение 54/46%)</td>
+                </tr>
+                <tr>
+                    <td>Колесная база</td>
+                    <td>106,3 дюйма (2700 мм)</td>
+                </tr>
+                <tr>
+                    <td>Длина × Ширина × Высота</td>
+                    <td>185,2 × 75,4 × 53,5 дюйма (4704 × 1915 × 1359 мм)</td>
+                </tr>
+                <tr>
+                    <td>0-100 км/ч</td>
+                    <td>3,1 сек.</td>
+                </tr>
+                <tr>
+                    <td>0-400 метров</td>
+                    <td>11,3 секунды</td>
+                </tr>
+                <tr>
+                    <td>Торможение, 100-0 км/ч</td>
+                    <td>32 метра</td>
+                </tr>
+                <tr>
+                    <td>Боковая перегрузка</td>
+                    <td>1,03 g (среднее значение)</td>
+                </tr>
+                <tr>
+                    <td>Восьмерка, круг</td>
+                    <td>23,6 секунды при 0,87 g (среднее время)</td>
+                </tr>
+                <tr>
+                    <td>В продаже</td>
+                    <td>Сейчас</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="conclusion-section">
+        <h2><i class="fas fa-check-circle"></i> Вердикт тест-драйва</h2>
+        
+        <div class="conclusion-content">
+            <div class="main-verdict">
+                <h3>Итоговое заключение</h3>
+                <p>Mercedes-AMG SL63 2022 года представляет собой революцию в истории SL-класса. Это уже не просто роскошный родстер с намеком на спортивность, а полноценный высокопроизводительный автомобиль с душой AMG. Жертвуя частью традиционного комфорта, инженеры Аффальтербаха создали машину, которая устанавливает новые стандарты динамики в своем классе.</p>
+                
+                <div class="key-point">
+                    <h4><i class="fas fa-star"></i> Ключевой вывод</h4>
+                    <p>SL63 — это самый быстрый, самый резкий и самый способный родстер в истории Mercedes-Benz. Он доказал, что может соревноваться с лучшими спортивными автомобилями, не теряя полностью своей сущности роскошного гранд-турера.</p>
+                </div>
+            </div>
+            
+            <div class="pros-cons-grid">
+                <div class="pros-card">
+                    <h4><i class="fas fa-thumbs-up"></i> Преимущества</h4>
+                    <ul>
+                        <li>Феноменальная динамика разгона</li>
+                        <li>Выдающаяся управляемость</li>
+                        <li>Качественные карбон-керамические тормоза</li>
+                        <li>Роскошный и технологичный интерьер</li>
+                        <li>Идеальное сочетание комфорта и спортивности</li>
+                    </ul>
+                </div>
+                
+                <div class="cons-card">
+                    <h4><i class="fas fa-thumbs-down"></i> Недостатки</h4>
+                    <ul>
+                        <li>Очень высокая цена с опциями</li>
+                        <li>Сложный цифровой интерфейс</li>
+                        <li>Большая масса (1922 кг)</li>
+                        <li>Непоследовательная работа АКПП в автомате</li>
+                        <li>Потерял часть "мягкости" предыдущих SL</li>
+                    </ul>
+                </div>
+                
+                <div class="target-card">
+                    <h4><i class="fas fa-user-check"></i> Кому подойдет?</h4>
+                    <p>Mercedes-AMG SL63 идеально подойдет состоятельным энтузиастам, которые:</p>
+                    <ul>
+                        <li>Хотят самый быстрый родстер Mercedes</li>
+                        <li>Ценят сочетание роскоши и динамики</li>
+                        <li>Готовы пожертвовать частью комфорта ради спортивности</li>
+                        <li>Ищут автомобиль для скоростных гранд-туров</li>
+                        <li>Хотят владеть частью истории AMG</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="final-rating">
+                <div class="rating-card">
+                    <h4>Общая оценка</h4>
+                    <div class="rating-value">9.2<span>/10</span></div>
+                    <div class="rating-breakdown">
+                        <div class="rating-item">
+                            <span>Динамика</span>
+                            <span class="rating-score">9.8</span>
+                        </div>
+                        <div class="rating-item">
+                            <span>Управляемость</span>
+                            <span class="rating-score">9.5</span>
+                        </div>
+                        <div class="rating-item">
+                            <span>Комфорт</span>
+                            <span class="rating-score">8.7</span>
+                        </div>
+                        <div class="rating-item">
+                            <span>Интерьер</span>
+                            <span class="rating-score">9.0</span>
+                        </div>
+                        <div class="rating-item">
+                            <span>Цена/Качество</span>
+                            <span class="rating-score">8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-footer">
+        <div class="test-details">
+            <h4><i class="fas fa-clipboard-check"></i> Детали тест-драйва</h4>
+            <p><strong>Пробег:</strong> 850 км</p>
+            <p><strong>Маршрут:</strong> Город, трасса, горные дороги</p>
+            <p><strong>Погода:</strong> Сухо, +18...+22°C</p>
+            <p><strong>Топливо:</strong> АИ-98</p>
+        </div>
+        
+        <div class="competitor-mention">
+            <h4><i class="fas fa-flag-checkered"></i> Основные конкуренты</h4>
+            <div class="competitor-list">
+                <span class="competitor">Porsche 911 Turbo Cabriolet</span>
+                <span class="competitor">BMW M8 Convertible</span>
+                <span class="competitor">Audi R8 Spyder</span>
+                <span class="competitor">Aston Martin Vantage Roadster</span>
+            </div>
+        </div>
+    </div>
+</div>
+        `
     },
     {
         id: 4,
@@ -58,7 +602,485 @@ const blogData = [
         readTime: "5 мин",
         views: 1345,
         likes: 234,
-        fullContent: "Полный текст статьи о автосалоне..."
+        fullContent: `<header class="article-header-content">
+    
+</header>
+
+<div class="article-body">
+    <h1>Mercedes-Benz на автосалоне в Женеве 2024: цифровая презентация и новый E-Class</h1>
+    
+    <div class="article-subtitle">
+        <div class="event-info">
+            <span><i class="fas fa-calendar-alt"></i> Женевский автосалон 2024</span>
+            <span><i class="fas fa-user"></i> Редакция AutoPremium</span>
+            <span><i class="fas fa-camera"></i> Официальные фото Mercedes-Benz</span>
+        </div>
+    </div>
+    
+    <div class="intro-paragraph">
+        <div class="important-note">
+            <i class="fas fa-info-circle"></i>
+            <div>
+                <h3>Важное обновление</h3>
+                <p>В 2024 году Mercedes-Benz не участвовал в Женевском автосалоне. В октябре 2023 года представители компании заявили, что после тщательного рассмотрения вопроса Mercedes-Benz принял решение не выступать на этом мероприятии, а провел онлайн-презентацию своих новинок.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-car-image">
+        <img src="Jeneva/flagman.jpg" alt="Mercedes-Benz E-Class W214 2024">
+        <p class="image-caption">Mercedes-Benz E-Class W214 2024 — флагман онлайн-презентации Mercedes в Женеве 2024</p>
+    </div>
+    
+    <div class="digital-presentation">
+        <h2><i class="fas fa-globe"></i> Цифровая стратегия Mercedes-Benz</h2>
+        <div class="presentation-content">
+            <div class="presentation-text">
+                <p>Mercedes-Benz продолжает трансформацию своего маркетинга, делая ставку на цифровые презентации и прямые трансляции. Отказ от участия в Женевском автосалоне 2024 стал частью этой стратегии.</p>
+                
+                <div class="strategy-points">
+                    <div class="strategy-point">
+                        <h4><i class="fas fa-video"></i> Онлайн-презентации</h4>
+                        <p>Прямые трансляции с глобальным охватом аудитории</p>
+                    </div>
+                    <div class="strategy-point">
+                        <h4><i class="fas fa-users"></i> Прямой контакт</h4>
+                        <p>Взаимодействие с клиентами через цифровые каналы</p>
+                    </div>
+                    <div class="strategy-point">
+                        <h4><i class="fas fa-chart-line"></i> Эффективность</h4>
+                        <p>Сокращение затрат на участие в автосалонах</p>
+                    </div>
+                </div>
+            </div>
+            <div class="presentation-image">
+                <img src="Jeneva/present.jpg" alt="Цифровая презентация Mercedes">
+                <p class="image-caption">Онлайн-презентация новинок Mercedes-Benz</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="model-introduction">
+        <h2><i class="fas fa-star"></i> Главная новинка: Mercedes-Benz E-Class W214</h2>
+        
+        <div class="model-headline">
+            <h3>Первый взгляд на Mercedes Benz E-Class 2024 года: классический роскошный седан для современной жизни</h3>
+            <p>Сохранив характерный дизайн классического седана, Mercedes Benz E-Class 2024 года обновляет привычный внешний вид, не разрушая своего устоявшегося имиджа.</p>
+        </div>
+        
+        <div class="design-philosophy">
+            <div class="design-text">
+                <h4><i class="fas fa-palette"></i> Философия дизайна</h4>
+                <p>Когда дело доходит до внешнего вида седана, ничто по-настоящему не превосходит дизайн традиционной трехобъемной компоновки. Красивый длинный капот, переходящий в объем салона, с классическим профилем крыши — такое нам нравится больше очертаний "четырехдверного купе", которые стали слишком часто практиковать в Mercedes.</p>
+                <p>Поэтому мы так рады видеть новый роскошный седан Mercedes Benz E-Class W214 2024 года выпуска: он по-прежнему сохраняет свой неподвластный времени внешний вид, не разрушая того, благодаря чему он так хорош и функционален.</p>
+            </div>
+            <div class="design-image">
+                <img src="Jeneva/bok.jpg" alt="Боковой профиль E-Class W214">
+            </div>
+        </div>
+    </div>
+    
+    <div class="dimensions-section">
+        <h2><i class="fas fa-ruler-combined"></i> Габариты и пропорции</h2>
+        
+        <div class="dimensions-content">
+            <div class="dimensions-text">
+                <p>E-Class W214 2024 года не выглядит больше, но колесная база увеличилась на 22 мм и теперь равняется <strong>2961 мм</strong>. Однако со стороны этого не видно благодаря усилиям инженеров и дизайнеров Mercedes: им удалось сохранить классические пропорции.</p>
+                
+                <div class="dimensions-details">
+                    <div class="dimension-item">
+                        <h4><i class="fas fa-road"></i> Улучшенная маневренность</h4>
+                        <p>Радиус разворота: <strong>10,8 м</strong> (задний привод)<br><strong>11,1 м</strong> (полный привод)</p>
+                        <p class="note">Благодаря подруливающей задней оси с углом поворота 4,5°</p>
+                    </div>
+                    
+                    <div class="dimension-item">
+                        <h4><i class="fas fa-suitcase"></i> Увеличенный багажник</h4>
+                        <p>Объем: <strong>540 литров</strong></p>
+                        <p class="note">Увеличение на 20 литров по сравнению с предыдущим поколением</p>
+                    </div>
+                    
+                    <div class="dimension-item">
+                        <h4><i class="fas fa-wind"></i> Аэродинамика</h4>
+                        <p>Коэффициент Сх: <strong>0,23</strong></p>
+                        <p class="note">Отличный показатель для автомобиля таких размеров</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
+    
+    <div class="exterior-design">
+        <h2><i class="fas fa-car"></i> Внешний дизайн: эволюция, а не революция</h2>
+        
+        <div class="design-gallery">
+            <div class="gallery-item">
+                <img src="Jeneva/pered.jpg" alt="Передняя часть E-Class">
+                <p class="image-caption">Новый дизайн передней части с увеличенной решеткой радиатора</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Jeneva/zad.jpg" alt="Задняя часть E-Class">
+                <p class="image-caption">Элегантная корма с фонарями в стиле эмблемы Mercedes</p>
+            </div>
+        </div>
+        
+        <div class="design-features">
+            <h3>Ключевые изменения в дизайне:</h3>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h4>Новые фары</h4>
+                    <p>Исчезла единственная полоска ДХО, ее заменили элегантными росчерками снизу, а вверху накрыли горизонтальной планкой</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h4>3D решетка радиатора</h4>
+                    <p>Выполнена в трехмерном дизайне с опциональной подсветкой, создает впечатление парения на передней части</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <h4>Усовершенствованная корма</h4>
+                    <p>Крышка багажника имеет более сложную форму, задние фонари сильнее заходят на крылья</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>Аэродинамика</h4>
+                    <p>Новые аэродинамические накладки и минимальное количество хрома в задней части</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="design-comparison">
+            <div class="comparison-content">
+                <h4><i class="fas fa-balance-scale"></i> Сравнение с BMW</h4>
+                <p>"Это новый 'Мерседес', а не 'БМВ'" — дизайн фар действительно выглядит лучше, чем нынешний дизайн раздельных фар/ходовых огней, которые стоят на BMW. Такое решение гораздо лучше смотрелось бы на текущей линейке BMW, особенно на 7-й серии.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="interior-section">
+        <h2><i class="fas fa-chair"></i> Интерьер: технологичная роскошь</h2>
+        
+        <div class="interior-highlight">
+            <h3><i class="fas fa-tv"></i> Больше никакого охватывающего экрана</h3>
+            <div class="interior-content">
+                <div class="interior-text">
+                    <p>Вместо большого экрана, который простирается от приборной панели водителя до информационно-развлекательного экрана, в салоне E-Class W214 2024 года предусмотрена отдельная приборная панель с новым широкоэкранным дисплеем, который отделен от экрана информационно-развлекательного центра.</p>
+                    
+                    <div class="interior-stats">
+                        <div class="stat-item">
+                            <h4>Увеличенные дисплеи</h4>
+                            <p>Приборная и центральная панель значительно больше, чем в предыдущем поколении</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Интуитивный интерфейс</h4>
+                            <p>Значки имеют цветовую маркировку, аналогичную смартфонам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="interior-image">
+                    <img src="Jeneva/panel.jpg" alt="Панель приборов E-Class W214">
+                </div>
+            </div>
+        </div>
+        
+        <div class="tech-architecture">
+            <h3><i class="fas fa-microchip"></i> Единая архитектура</h3>
+            <div class="tech-content">
+                <p>Mercedes использует один процессор для управления приложениями и органами управления внутри E-класса. Это помогает:</p>
+                
+                <div class="tech-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Сократить зависимость от нескольких поставщиков</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Решить проблемы с цепочкой поставок</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Упростить внедрение новых функций через обновления ПО</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="entertainment-section">
+        <h2><i class="fas fa-gamepad"></i> Развлечения и коннективность</h2>
+        
+        <div class="entertainment-warning">
+            <div class="warning-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Приспособлен под TikTok: спорная особенность</h3>
+            </div>
+            <div class="warning-content">
+                <p>В E-Class W214 присутствует одна опция, которая вызывает вопросы: интерактивность с использованием сторонних веб-приложений через камеру MBUX Superscreen.</p>
+                
+                <div class="app-list">
+                    <div class="app-item">
+                        <h4><i class="fab fa-tiktok"></i> TikTok</h4>
+                        <p>Прямое взаимодействие с платформой</p>
+                    </div>
+                    <div class="app-item">
+                        <h4><i class="fas fa-video"></i> Zoom / Webex</h4>
+                        <p>Видеоконференции в автомобиле</p>
+                    </div>
+                    <div class="app-item">
+                        <h4><i class="fas fa-gamepad"></i> Angry Birds</h4>
+                        <p>Игры во время стоянки</p>
+                    </div>
+                    <div class="app-item">
+                        <h4><i class="fas fa-globe"></i> Vivaldi Browser</h4>
+                        <p>Веб-браузинг</p>
+                    </div>
+                </div>
+                
+                <div class="privacy-concern">
+                    <h4><i class="fas fa-user-shield"></i> Проблемы конфиденциальности</h4>
+                    <p>Хотя эти функции будут отключены во время движения, остается проблема с возможным доступом производителя в личную жизнь владельца.</p>
+                </div>
+                
+                <div class="safety-feature">
+                    <h4><i class="fas fa-shield-alt"></i> Функции безопасности</h4>
+                    <ul>
+                        <li><strong>Фильтрация контента:</strong> Водитель не видит видео во время движения</li>
+                        <li><strong>Контроль состояния водителя:</strong> Система определяет засыпание и подает сигналы</li>
+                        <li><strong>Аварийная остановка:</strong> Активируется при потере контроля водителем</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ai-feature">
+            <h3><i class="fas fa-robot"></i> Искусственный интеллект</h3>
+            <div class="ai-content">
+                <p>Mercedes внедряет ИИ, позволяющий автомобилю изучать и автоматизировать функции, которыми регулярно пользуются пассажиры. При этом сохраняется возможность самостоятельной настройки.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="powertrain-section">
+        <h2><i class="fas fa-cogs"></i> Технические характеристики</h2>
+        
+        <div class="hybrid-system">
+            <h3><i class="fas fa-bolt"></i> Мягкий гибрид, отличная мощность</h3>
+            
+            <div class="powertrain-description">
+                <p>Mercedes E-Class W214 стал гибридом с мягким приводом: 48-вольтовая интегрированная система стартер-генератора (ISG) добавляет <strong>20 л.с. и 200 Нм</strong> электрической мощности.</p>
+            </div>
+            
+            <div class="engine-variants">
+                <div class="engine-card">
+                    <div class="engine-header">
+                        <h4>E 350 4Matic</h4>
+                        <span class="engine-badge">2.0L 4-цилиндровый</span>
+                    </div>
+                    <div class="engine-specs">
+                        <div class="spec">
+                            <span class="spec-label">Объем</span>
+                            <span class="spec-value">2.0 л</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Тип</span>
+                            <span class="spec-value">Бензин, турбо</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Мощность</span>
+                            <span class="spec-value">255 л.с.</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Крутящий момент</span>
+                            <span class="spec-value">400 Нм</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-header">
+                        <h4>E 450 4Matic</h4>
+                        <span class="engine-badge">3.0L 6-цилиндровый</span>
+                    </div>
+                    <div class="engine-specs">
+                        <div class="spec">
+                            <span class="spec-label">Объем</span>
+                            <span class="spec-value">3.0 л</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Тип</span>
+                            <span class="spec-value">Бензин, турбо</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Мощность</span>
+                            <span class="spec-value">375 л.с.</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Крутящий момент</span>
+                            <span class="spec-value">500 Нм</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="transmission-info">
+                <h4><i class="fas fa-exchange-alt"></i> Трансмиссия</h4>
+                <p>Оба автомобиля оснащены девятиступенчатой автоматической коробкой передач 9G-TRONIC с ограничителем скорости <strong>210 км/ч</strong>.</p>
+                
+                <div class="features-list">
+                    <div class="feature">
+                        <i class="fas fa-recycle"></i>
+                        <span>Режимы рекуперации энергии</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-power-off"></i>
+                        <span>Незаметный старт/стоп</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Ограничитель скорости 210 км/ч</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="production-section">
+        <h2><i class="fas fa-industry"></i> Производство и продажи</h2>
+        
+        <div class="production-content">
+            <div class="production-info">
+                <h3><i class="fas fa-map-marker-alt"></i> Места производства</h3>
+                
+                <div class="factory-locations">
+                    <div class="factory">
+                        <div class="factory-header">
+                            <i class="fas fa-industry"></i>
+                            <h4>Зиндельфинген, Германия</h4>
+                        </div>
+                        <p>Основное производство E-Class W214</p>
+                        <p class="note">Там же производится Mercedes-Benz GLC</p>
+                    </div>
+                    
+                    <div class="factory">
+                        <div class="factory-header">
+                            <i class="fas fa-industry"></i>
+                            <h4>Пекин, Китай</h4>
+                        </div>
+                        <p>Сборочное производство для рынка Китая</p>
+                        <p class="note">Совместное предприятие Mercedes-Benz</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="availability-info">
+                <h3><i class="fas fa-calendar-check"></i> Доступность</h3>
+                <div class="availability-content">
+                    <div class="timeline">
+                        <div class="timeline-event">
+                            <div class="event-date">Конец 2023</div>
+                            <div class="event-desc">Начало продаж в Европе</div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-date">Начало 2024</div>
+                            <div class="event-desc">Поставки в другие регионы</div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-date">Весна 2024</div>
+                            <div class="event-desc">Доступность AMG версий</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conclusion-section">
+        <h2><i class="fas fa-check-circle"></i> Выводы</h2>
+        
+        <div class="conclusion-content">
+            <div class="main-conclusion">
+                <h3>Вердикт редакции</h3>
+                <p>Mercedes-Benz E-Class W214 2024 года представляет собой идеальный баланс между традициями и инновациями. Немецкий производитель доказал, что можно модернизировать классический седан, не теряя его сущности.</p>
+                
+                <p>Отказ от участия в Женевском автосалоне в пользу цифровой презентации отражает меняющиеся тенденции в автомобильной индустрии, где онлайн-коммуникация становится все более важной.</p>
+            </div>
+            
+            <div class="summary-grid">
+                <div class="summary-card positive">
+                    <h4><i class="fas fa-plus-circle"></i> Сильные стороны</h4>
+                    <ul>
+                        <li>Сохранение классических пропорций седана</li>
+                        <li>Улучшенная аэродинамика (Cx 0.23)</li>
+                        <li>Эволюционный, а не революционный дизайн</li>
+                        <li>Мощные гибридные двигатели</li>
+                        <li>Передовые технологии развлечений</li>
+                    </ul>
+                </div>
+                
+                <div class="summary-card neutral">
+                    <h4><i class="fas fa-balance-scale"></i> Спорные моменты</h4>
+                    <ul>
+                        <li>Отказ от физического участия в автосалонах</li>
+                        <li>Вопросы приватности из-за интеграции соцсетей</li>
+                        <li>Цифровой перегруз интерфейса</li>
+                        <li>Риск отвлечения водителя</li>
+                    </ul>
+                </div>
+                
+                <div class="summary-card target">
+                    <h4><i class="fas fa-users"></i> Целевая аудитория</h4>
+                    <p>E-Class W214 идеально подойдет:</p>
+                    <ul>
+                        <li>Бизнес-пользователям, ценящим классический стиль</li>
+                        <li>Технофилам, желающим самых современных функций</li>
+                        <li>Владельцам предыдущих E-Class, ищущих обновление</li>
+                        <li>Тем, кто скучает по "настоящим" седанам</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="final-thought">
+                <h4><i class="fas fa-lightbulb"></i> Ключевая мысль</h4>
+                <p>Mercedes-Benz E-Class W214 доказывает, что даже в эпоху электромобилей и кроссоверов классический роскошный седан все еще имеет свое место на рынке. Это автомобиль для тех, кто ценит традиции, но не хочет отставать от технологического прогресса.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-footer">
+        <div class="event-details">
+            <h4><i class="fas fa-info-circle"></i> Детали мероприятия</h4>
+            <p><strong>Событие:</strong> Цифровая презентация новинок Mercedes-Benz</p>
+            <p><strong>Время:</strong> Март 2024 года</p>
+            <p><strong>Формат:</strong> Онлайн-трансляция</p>
+            <p><strong>Основная новинка:</strong> Mercedes-Benz E-Class W214</p>
+        </div>
+        
+        <div class="related-models">
+            <h4><i class="fas fa-car"></i> Связанные модели</h4>
+            <div class="model-tags">
+                <span class="model-tag">Mercedes-Benz S-Class</span>
+                <span class="model-tag">Mercedes-Benz C-Class</span>
+                <span class="model-tag">BMW 5 Series</span>
+                <span class="model-tag">Audi A6</span>
+            </div>
+        </div>
+    </div>
+</div>`
     },
     {
         id: 5,
