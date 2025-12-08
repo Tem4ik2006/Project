@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="style.css">  
      <link rel="stylesheet" href="blog.css">  
      <link rel="stylesheet" href="eqs.css">  
+     <link rel="stylesheet" href="jeneva.css">  
+     <link rel="stylesheet" href="amgsl63.css">  
+     <link rel="stylesheet" href="avatar.css">  
+     <link rel="stylesheet" href="ecalss2025.css">  
+     <link rel="stylesheet" href="modal.css">  
+     
 </head>
 <body>
-    <!-- Header with Video -->
+    <!-- Header   -->
     <header>
         <div class="video-container">
             <video autoplay muted loop>
-                <source src="mercedes-video2.mp4" type="video/mp4">
+                <source src="vid.mp4" type="video/mp4">
                 Ваш браузер не поддерживает видео.
             </video>
             <div class="overlay"></div>
@@ -56,7 +62,7 @@
         </div>
     </header>
 
-    <!-- Models Section -->
+    <!-- Models  -->
     <section id="models">
         <div class="section-title">
             <h2>Наши модели</h2>
@@ -129,7 +135,7 @@
         </div>
     </section>
 
-    <!-- Performance Models Section -->
+    <!--  Models  -->
     <section class="performance-models">
         <div class="section-title">
             <h2>Самые мощные Mercedes-AMG</h2>
@@ -194,7 +200,7 @@
     </section>
 
     
-    <!-- Gallery Section -->
+    <!-- Gallery  -->
     <section id="gallery" class="gallery-section">
         <div class="section-title">
             <h2>Галерея Mercedes-Benz</h2>
@@ -243,7 +249,7 @@
         </div>
     </section>
 
-    <!-- Calculator Section -->
+    <!-- Calculator  -->
     <section id="calculator">
         <div class="section-title">
             <h2>Калькулятор стоимости</h2>
@@ -323,7 +329,7 @@
     </section>
 
 
-    <!-- Blog/News Section -->
+    <!-- Blog/News  -->
 <section id="blog">
     <div class="section-title">
         <h2>Блог & Новости</h2>
@@ -348,7 +354,7 @@
     </div>
     
     <div class="blog-grid" id="blog-grid">
-        <!-- Статьи будут добавляться через JavaScript -->
+        
     </div>
     
     <div class="blog-load-more">
@@ -364,41 +370,46 @@
 
 
 
-    <!-- Contact Section -->
+    <!-- Contact  -->
     <section id="contact">
         <div class="section-title">
             <h2>Свяжитесь с нами</h2>
             <p>Оставьте заявку, и наш менеджер свяжется с вами для консультации</p>
         </div>
         
-        <form class="contact-form" id="contact-form">
-            <div class="form-group">
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Электронная почта</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="phone">Телефон</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
+       <form class="contact-form" id="contact-form" action="https://formcarry.com/s/Eifz-QH6quc" method="POST">
+    
+    <input type="hidden" name="_gotcha" style="display:none !important">
+    
+    <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required minlength="2">
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Электронная почта</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" required pattern="^\+7[0-9]{10}$" placeholder="+79991234567">
+    </div>
 
-            <div class="form-group">
-                <label for="message">О себе</label>
-                <textarea id="message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required></textarea>
-            </div>
-            
-            <button type="submit" class="btn">Отправить заявку</button>
-            
-            <div class="form-message" id="form-message"></div>
-        </form>
+    <div class="form-group">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required minlength="10"></textarea>
+    </div>
+    
+    <button type="submit" class="btn">Отправить заявку</button>
+    
+    <div class="form-message" id="form-message"></div>
+</form>
     </section>
 
-    <!-- Footer -->
+
+    
+   
     <footer>
         <div class="footer-content">
             <div class="footer-logo">Mercedes<span>Elite</span></div>
@@ -426,24 +437,30 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2>Связь с нами</h2>
-            <form id="modal-contact-form">
-                <div class="form-group">
-                    <label for="modal-name">Ваше имя</label>
-                    <input type="text" id="modal-name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="modal-phone">Телефон</label>
-                    <input type="tel" id="modal-phone" name="phone" required>
-                </div>
+           <form id="modal-contact-form" action="https://formcarry.com/s/Eifz-QH6quc" method="POST">
+    
+    <input type="hidden" name="_gotcha" style="display:none !important">
+    
+    <div class="form-group">
+        <label for="modal-name">Ваше имя</label>
+        <input type="text" id="modal-name" name="name" required minlength="2">
+    </div>
+    
+     <div class="form-group">
+        <label for="modal-email">Электронная почта</label>
+        <input type="email" id="modal-email" name="email" required>
+    </div>
 
-                <div class="form-group">
-                    <label for="modal-message">О себе</label>
-                    <textarea id="modal-message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required></textarea>
-                </div>
-                
-                <button type="submit" class="btn">Отправить</button>
-            </form>
+    <div class="form-group">
+        <label for="modal-message">Cooбщение</label>
+        <textarea id="modal-message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required minlength="10"></textarea>
+    </div>
+    
+    <button type="submit" class="btn">Отправить</button>
+    
+    <!-- Сообщение об  отправке -->
+    <div class="form-message" id="modal-form-message"></div>
+</form>
         </div>
     </div>
 

@@ -1231,7 +1231,7 @@ footer::before {
     background: var(--bg-lighter);
 }
 
-/* Mobile Styles */
+/* Mobile  */
 @media screen and (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -1414,7 +1414,7 @@ footer::before {
     }
 }
 
-/* Стили для ошибок валидации */
+/* Стили для ошибок  */
 .error {
     border-color: #ef4444 !important;
     box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2) !important;
@@ -1431,7 +1431,7 @@ footer::before {
     position: relative;
 }
 
-/* Loading States */
+
 .loading {
     opacity: 0.7;
     pointer-events: none;
@@ -1469,7 +1469,7 @@ footer::before {
     transform: translateY(0);
 }
 
-/* Кастомный скроллбар */
+/*  скроллбар */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -1487,7 +1487,7 @@ footer::before {
     background: var(--primary-light);
 }
 
-/* Selection styles */
+
 ::selection {
     background: var(--primary-color);
     color: var(--text-light);
@@ -1496,4 +1496,48 @@ footer::before {
 ::-moz-selection {
     background: var(--primary-color);
     color: var(--text-light);
+}
+
+
+
+.nav-links,
+.nav-links ul,
+.nav-links li,
+.dropdown,
+.dropdown li {
+    list-style-type: none !important;
+}
+
+
+.performance-table td:first-child::before {
+    content: '' !important;
+    display: none !important;
+}
+
+
+.performance-table tr:hover td:first-child {
+    color: var(--primary-light);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.performance-table tr:hover td:first-child::before {
+    content: '→';
+    position: absolute;
+    left: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    animation: arrowSlide 0.3s ease;
+}
+
+@keyframes arrowSlide {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

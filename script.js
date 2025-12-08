@@ -9,7 +9,7 @@ burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     burger.classList.toggle('active');
     
-    // Скрываем/показываем hero и logo при открытии/закрытии меню
+    
     if (navLinks.classList.contains('active')) {
         hero.style.opacity = '0';
         hero.style.visibility = 'hidden';
@@ -223,50 +223,90 @@ if (calculatorForm && totalPriceElement) {
     calculateTotalPrice();
 }
 
-// Modal
+
+
+// Modal elements
 const modal = document.getElementById('contact-modal');
 const contactBtn = document.getElementById('contact-btn');
 const closeModal = document.querySelector('.close-modal');
 
+// Form elements
+const modalContactForm = document.getElementById('modal-contact-form');
+const contactForm = document.getElementById('contact-form');
+
+
+const FORMCARRY_URL = 'https://formcarry.com/s/Eifz-QH6quc';
+
+
+function openModal() {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModalFunc() {
+    modal.classList.add('closing');
+    setTimeout(() => {
+        modal.classList.remove('active', 'closing');
+        document.body.style.overflow = 'auto';
+    }, 400);
+}
+
+
 if (contactBtn && modal) {
     contactBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        openModal();
     });
 }
 
 if (closeModal && modal) {
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Restore scrolling
-    });
+    closeModal.addEventListener('click', closeModalFunc);
 }
 
 if (modal) {
-    window.addEventListener('click', (e) => {
+    modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
+            closeModalFunc();
         }
     });
 }
 
-// Form Validation Functions
+
+
+
 function validateName(name) {
     return name && name.trim().length >= 2;
 }
 
-function validatePhone(phone) {
-    const cleaned = phone.replace(/\D/g, '');
-    return cleaned.length === 11 && cleaned[0] === '7';
+
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+
+function isValidPhone(phone) {
+    
+    const cleaned = phone.replace(/[^\d+]/g, '');
+    
+    
+    
+    if (cleaned.startsWith('+7') && cleaned.length === 12) {
+        return true;
+    }
+    
+    if (cleaned.startsWith('8') && cleaned.length === 11) {
+        return true;
+    }
+    
+    return false;
 }
 
 function validateMessage(message) {
     return message && message.trim().length >= 10;
 }
 
-// Error display function
+
 function showError(input, message) {
     const existingError = input.parentNode.querySelector('.error-message');
     if (existingError) {
@@ -287,13 +327,13 @@ function showError(input, message) {
     }
 }
 
-// Enhanced form submission handler
-function handleFormSubmit(form, e) {
+// Форма модального окна 
+async function handleModalFormSubmit(form, e) {
     e.preventDefault();
     
-    const nameInput = form.querySelector('input[type="text"]');
-    const phoneInput = form.querySelector('input[type="tel"]');
-    const messageInput = form.querySelector('textarea');
+    const nameInput = form.querySelector('input[name="name"]');
+    const emailInput = form.querySelector('input[type="email"]');
+    const messageInput = form.querySelector('textarea[name="message"]');
     
     let isValid = true;
     
@@ -305,119 +345,206 @@ function handleFormSubmit(form, e) {
         showError(nameInput, null);
     }
     
-    if (!validatePhone(phoneInput.value)) {
-        showError(phoneInput, 'Номер телефона должен состоять из 11 цифр и начинаться с 7');
+    if (!isValidEmail(emailInput.value)) {
+        showError(emailInput, 'Введите корректный email адрес');
         isValid = false;
     } else {
-        showError(phoneInput, null);
+        showError(emailInput, null);
     }
     
     if (!validateMessage(messageInput.value)) {
-        showError(messageInput, 'Поле "О себе" должно содержать минимум 10 символов');
+        showError(messageInput, 'Сообщение должно содержать минимум 10 символов');
         isValid = false;
     } else {
         showError(messageInput, null);
     }
     
     if (!isValid) {
-        const formMessage = form.querySelector('.form-message') || document.getElementById('form-message');
+        const formMessage = document.getElementById('modal-form-message');
+        if (formMessage) {
+            formMessage.textContent = 'Пожалуйста, исправьте ошибки в форме';
+            formMessage.className = 'form-message error';
+            formMessage.style.display = 'block';
+        }
+        return;
+    }
+    
+    
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Отправка...';
+    submitBtn.disabled = true;
+    
+    
+    const formData = new FormData(form);
+    
+    
+    const data = Object.fromEntries(formData);
+    
+    try {
+        const response = await fetch(FORMCARRY_URL, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+            
+            const formMessage = document.getElementById('modal-form-message');
+            if (formMessage) {
+                formMessage.textContent = 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.';
+                formMessage.className = 'form-message success';
+                formMessage.style.display = 'block';
+            }
+            
+            
+            form.reset();
+            
+            
+            setTimeout(() => {
+                closeModalFunc();
+            }, 2000);
+        } else {
+            throw new Error(result.message || 'Ошибка при отправке');
+        }
+    } catch (error) {
+        const formMessage = document.getElementById('modal-form-message');
+        if (formMessage) {
+            formMessage.textContent = 'Ошибка при отправке. Пожалуйста, попробуйте еще раз.';
+            formMessage.className = 'form-message error';
+            formMessage.style.display = 'block';
+        }
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+}
+
+
+async function handleContactFormSubmit(form, e) {
+    e.preventDefault();
+    
+    const nameInput = form.querySelector('input[name="name"]');
+    const emailInput = form.querySelector('input[type="email"]');
+    const phoneInput = form.querySelector('input[type="tel"]');
+    const messageInput = form.querySelector('textarea[name="message"]');
+    
+    let isValid = true;
+    
+    // Validation
+    if (!validateName(nameInput.value)) {
+        showError(nameInput, 'Имя должно содержать минимум 2 символа');
+        isValid = false;
+    } else {
+        showError(nameInput, null);
+    }
+    
+    if (!isValidEmail(emailInput.value)) {
+        showError(emailInput, 'Введите корректный email адрес');
+        isValid = false;
+    } else {
+        showError(emailInput, null);
+    }
+    
+    if (!isValidPhone(phoneInput.value)) {
+        showError(phoneInput, 'Введите номер в формате +71234567890');
+        isValid = false;
+    } else {
+        showError(phoneInput, null);
+    }
+    
+    if (!validateMessage(messageInput.value)) {
+        showError(messageInput, 'Сообщение должно содержать минимум 10 символов');
+        isValid = false;
+    } else {
+        showError(messageInput, null);
+    }
+    
+    if (!isValid) {
+        const formMessage = document.getElementById('form-message');
         if (formMessage) {
             formMessage.textContent = 'Пожалуйста, исправьте ошибки в форме';
             formMessage.className = 'form-message error';
             formMessage.style.display = 'block';
             
-            // Scroll to error message
+            
             formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
         return;
     }
     
-    // Show loading state
+    
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Отправка...';
     submitBtn.disabled = true;
-    submitBtn.classList.add('loading');
     
-    // Simulate API call
-    setTimeout(() => {
+    
+    const formData = new FormData(form);
+    
+    
+    const data = Object.fromEntries(formData);
+    
+    try {
+        const response = await fetch(FORMCARRY_URL, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+            
+            const formMessage = document.getElementById('form-message');
+            if (formMessage) {
+                formMessage.textContent = 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.';
+                formMessage.className = 'form-message success';
+                formMessage.style.display = 'block';
+                
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }
+            
+            
+            form.reset();
+        } else {
+            throw new Error(result.message || 'Ошибка при отправке');
+        }
+    } catch (error) {
+        const formMessage = document.getElementById('form-message');
+        if (formMessage) {
+            formMessage.textContent = 'Ошибка при отправке. Пожалуйста, попробуйте еще раз.';
+            formMessage.className = 'form-message error';
+            formMessage.style.display = 'block';
+        }
+    } finally {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-        submitBtn.classList.remove('loading');
-        
-        // Show success message
-        const formMessage = form.querySelector('.form-message') || document.getElementById('form-message');
-        if (formMessage) {
-            formMessage.textContent = 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.';
-            formMessage.className = 'form-message success';
-            formMessage.style.display = 'block';
-            
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        } else {
-            alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
-            if (modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        }
-        
-        // Reset form
-        form.reset();
-        
-        // Clear error messages
-        const errorMessages = form.querySelectorAll('.error-message');
-        errorMessages.forEach(error => error.remove());
-        
-        const errorInputs = form.querySelectorAll('.error');
-        errorInputs.forEach(input => input.classList.remove('error'));
-    }, 1500);
+    }
 }
 
-// Form submission handlers
-const contactForm = document.getElementById('contact-form');
-const modalContactForm = document.getElementById('modal-contact-form');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => handleFormSubmit(contactForm, e));
+    contactForm.addEventListener('submit', (e) => handleContactFormSubmit(contactForm, e));
 }
 
 if (modalContactForm) {
-    modalContactForm.addEventListener('submit', (e) => handleFormSubmit(modalContactForm, e));
+    modalContactForm.addEventListener('submit', (e) => handleModalFormSubmit(modalContactForm, e));
 }
 
-// Phone formatting function
-function formatPhone(input) {
-    let value = input.value.replace(/\D/g, '');
-    
-    if (value.length > 0 && value[0] === '8') {
-        value = '7' + value.slice(1);
-    }
-    
-    if (value.length > 0) {
-        let formattedValue = '+7 (';
-        
-        if (value.length > 1) {
-            formattedValue += value.slice(1, 4);
-        }
-        if (value.length >= 4) {
-            formattedValue += ') ' + value.slice(4, 7);
-        }
-        if (value.length >= 7) {
-            formattedValue += '-' + value.slice(7, 9);
-        }
-        if (value.length >= 9) {
-            formattedValue += '-' + value.slice(9, 11);
-        }
-        
-        input.value = formattedValue;
-    }
-}
-
-// Enhanced input validation with real-time feedback
+// Упрощенная валидация с реальной обратной связью
 document.addEventListener('DOMContentLoaded', function() {
-    // Name inputs
+    
     const nameInputs = document.querySelectorAll('input[type="text"][name="name"]');
     
     nameInputs.forEach(input => {
@@ -434,19 +561,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Phone inputs
-    const phoneInputs = document.querySelectorAll('input[type="tel"]');
     
-    phoneInputs.forEach(input => {
-        input.placeholder = '+7 (999) 999-99-99';
-        
-        input.addEventListener('input', function() {
-            formatPhone(this);
-        });
-        
+    const emailInputs = document.querySelectorAll('input[type="email"]');
+    
+    emailInputs.forEach(input => {
         input.addEventListener('blur', function() {
-            if (!validatePhone(this.value)) {
-                showError(this, 'Номер телефона должен состоять из 11 цифр и начинаться с 7');
+            if (!isValidEmail(this.value)) {
+                showError(this, 'Введите корректный email адрес');
             } else {
                 showError(this, null);
             }
@@ -457,13 +578,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Message inputs
+    
+    const phoneInputs = document.querySelectorAll('#contact-form input[type="tel"]');
+    
+    phoneInputs.forEach(input => {
+        input.placeholder = '+71234567890';
+        
+        
+        
+        input.addEventListener('blur', function() {
+            if (!isValidPhone(this.value)) {
+                showError(this, 'Введите номер в формате +71234567890');
+            } else {
+                showError(this, null);
+            }
+        });
+        
+        input.addEventListener('focus', function() {
+            showError(this, null);
+        });
+    });
+    
+    
     const messageInputs = document.querySelectorAll('textarea[name="message"]');
     
     messageInputs.forEach(input => {
         input.addEventListener('blur', function() {
             if (!validateMessage(this.value)) {
-                showError(this, 'Поле "О себе" должно содержать минимум 10 символов');
+                showError(this, 'Сообщение должно содержать минимум 10 символов');
             } else {
                 showError(this, null);
             }
@@ -475,7 +617,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Smooth scrolling for anchor links
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModalFunc();
+    }
+});
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -490,7 +639,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth'
             });
             
-            // Close mobile menu if open
+            
             if (navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
                 burger.classList.remove('active');
@@ -503,7 +652,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Close mobile menu when clicking on links
+
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
@@ -517,7 +666,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Close mobile menu on desktop resize
+
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
         navLinks.classList.remove('active');
@@ -529,7 +678,7 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Intersection Observer for animations
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -544,7 +693,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
+
 document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll('.model-card, .tuning-card, .calculator, .contact-form');
     
@@ -556,7 +705,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Performance optimization: Lazy loading for images
+
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {

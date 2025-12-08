@@ -11,13 +11,630 @@ const blogData = [
         views: 1247,
         likes: 342,
         fullContent: `
-            <h2>Дизайн и экстерьер</h2>
-            <p>Новый Mercedes E-Class 2025 года представляет собой эволюцию классического дизайна с акцентом на аэродинамику и современную эстетику. Линии кузова стали более плавными, а коэффициент лобового сопротивления снижен до рекордных 0.23.</p>
-            <img src="blog-e-class-interior.jpg" alt="Интерьер E-Class" style="width:100%; border-radius:8px; margin:1.5rem 0;">
-            <h2>Технологии и инновации</h2>
-            <p>Основным обновлением стала система MBUX Superscreen, которая объединяет три дисплея в единую панель. Искусственный интеллект теперь лучше адаптируется к привычкам водителя.</p>
-            <h2>Производительность</h2>
-            <p>Линейка двигателей включает как гибридные, так и полностью электрические варианты. Флагманская версия E 450e предлагает 381 л.с. и запас хода на электротяге до 100 км.</p>
+           <header class="article-header-content">
+   
+</header>
+
+<div class="article-body">
+    <h1>Mercedes-Benz E-Class 2025: Цифровой аристократ бизнес-класса</h1>
+    
+    <div class="article-subtitle">
+        <div class="model-info">
+            <span><i class="fas fa-car"></i> Бизнес-седан премиум-класса</span>
+            <span><i class="fas fa-calendar"></i> Модельный год: 2025</span>
+            <span><i class="fas fa-flag"></i> Конкуренты: BMW 5 Series, Audi A6</span>
+        </div>
+    </div>
+    
+    <div class="intro-section">
+        <div class="intro-content">
+            <h2><i class="fas fa-star-of-life"></i> Введение</h2>
+            <p>Mercedes-Benz E-Class на протяжении десятилетий олицетворяет идеальный баланс роскоши, технологий, комфорта и статуса в сегменте бизнес-седанов. Модель 2025 года представляет собой эволюцию этого успешного формата, сохраняя все ключевые достоинства предшественника и получая заметные обновления.</p>
+            <p>Новый E-Class продолжает ожесточенную борьбу за лидерство с главными конкурентами – BMW 5-й серии (G60) и Audi A6 (C8), а также Volvo S90, предлагая покупателям фирменное сочетание солидности, инноваций и ездового совершенства.</p>
+        </div>
+        
+        <div class="competitor-badges">
+            <div class="competitor-badge">
+                <img src="E-Class-2025/5.jfif" alt="BMW 5 Series">
+                <span>BMW 5 Series</span>
+            </div>
+            <div class="competitor-badge">
+                <img src="E-Class-2025/6.jfif" alt="Audi A6">
+                <span>Audi A6</span>
+            </div>
+            <div class="competitor-badge">
+                <img src="E-Class-2025/s90.jfif" alt="Volvo S90">
+                <span>Volvo S90</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-image-section">
+        <img src="E-Class-2025/evo.jfif" alt="Mercedes-Benz E-Class 2025">
+        <p class="image-caption">Mercedes-Benz E-Class 2025 — эволюция классики бизнес-класса</p>
+    </div>
+    
+    <div class="dimensions-section">
+        <h2><i class="fas fa-ruler-combined"></i> Габариты</h2>
+        
+        <div class="dimensions-content">
+            <div class="dimensions-text">
+                <p>E-Class 2025 года – солидный автомобиль, подчеркивающий свой статус размерами. Внушительные габариты обеспечивают простор в салоне и солидную внешность.</p>
+                
+                <div class="dimensions-grid">
+                    <div class="dimension-card">
+                        <div class="dimension-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h4>Длина</h4>
+                        <p class="dimension-value">4947 мм</p>
+                        <p class="dimension-note">≈195 дюймов</p>
+                    </div>
+                    
+                    <div class="dimension-card">
+                        <div class="dimension-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h4>Колесная база</h4>
+                        <p class="dimension-value">2961 мм</p>
+                        <p class="dimension-note">≈116.6 дюймов</p>
+                    </div>
+                    
+                    <div class="dimension-card">
+                        <div class="dimension-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h4>All-Terrain клиренс</h4>
+                        <p class="dimension-value">Увеличенный</p>
+                        <p class="dimension-note">Квази-внедорожный характер</p>
+                    </div>
+                    
+                    <div class="dimension-card">
+                        <div class="dimension-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h4>Масса</h4>
+                        <p class="dimension-value">~1800 кг</p>
+                        <p class="dimension-note">В зависимости от комплектации</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="exterior-section">
+        <h2><i class="fas fa-car"></i> Экстерьер: эволюция стиля</h2>
+        
+        <div class="exterior-content">
+            <div class="exterior-text">
+                <p>Дизайн E-Class 2025 – это эволюция фирменного стиля Mercedes-Benz с акцентом на динамичность и солидность.</p>
+                
+                <div class="design-features">
+                    <div class="design-feature">
+                        <h4><i class="fas fa-gem"></i> Передняя часть</h4>
+                        <p>Выразительная решетка радиатора (разные стили для базовых и AMG-версий). Фары стали тоньше и "острее", устремляясь к крыльям.</p>
+                    </div>
+                    
+                    <div class="design-feature">
+                        <h4><i class="fas fa-wave-square"></i> Боковой профиль</h4>
+                        <p>Классические плавные линии кузова. Изгиб крыши стал более выраженным, создавая динамичный силуэт.</p>
+                    </div>
+                    
+                    <div class="design-feature">
+                        <h4><i class="fas fa-car-side"></i> Задняя часть</h4>
+                        <p>Сохраняет солидность с узнаваемыми фонарями и элегантной линией крыши.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exterior-image">
+                <img src="E-Class-2025/bok.jfif" alt="Экстерьер E-Class 2025">
+                <p class="image-caption">Боковой профиль нового E-Class — элегантность и динамика</p>
+            </div>
+        </div>
+        
+        <div class="body-styles">
+            <h3><i class="fas fa-shapes"></i> Доступные кузова</h3>
+            
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="E-Class-2025/sedan.jpg" alt="E-Class Седан">
+                    </div>
+                    <div class="style-info">
+                        <h4>Седан</h4>
+                        <p>Классическое исполнение с привлекательным, гармоничным дизайном. Идеальный выбор для бизнес-клиентов.</p>
+                        <div class="style-badge">Классика</div>
+                    </div>
+                </div>
+                
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="E-Class-2025/universal.jfif" alt="E-Class All-Terrain">
+                    </div>
+                    <div class="style-info">
+                        <h4>E 450 All-Terrain</h4>
+                        <p>Универсал в "внедорожном" стиле с увеличенным клиренсом и пластиковыми накладками. Наиболее сбалансированный дизайн.</p>
+                        <div class="style-badge active">Универсал</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="design-note">
+                <p><strong>Особенность All-Terrain:</strong> Увеличенный клиренс, неокрашенные пластиковые накладки на колесных арках и бамперах, а также уникальная решетка радиатора.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="interior-section">
+        <h2><i class="fas fa-chair"></i> Интерьер: цифровая роскошь</h2>
+        
+        <div class="interior-intro">
+            <p>Салон E-Class 2025 – это демонстрация технологий и роскоши, хотя и не без спорных моментов. Три экрана формируют цифровое пространство нового поколения.</p>
+        </div>
+        
+        <div class="screen-system">
+            <h3><i class="fas fa-tv"></i> Цифровая революция: три экрана</h3>
+            
+            <div class="screens-grid">
+                <div class="screen-card">
+                    <div class="screen-header">
+                        <div class="screen-size">12.3"</div>
+                        <h4>Приборная панель</h4>
+                    </div>
+                    <p>Цифровая панель перед водителем с настраиваемыми режимами отображения</p>
+                </div>
+                
+                <div class="screen-card main">
+                    <div class="screen-header">
+                        <div class="screen-size">14.4"</div>
+                        <h4>Центральный экран</h4>
+                    </div>
+                    <p>Сенсорный дисплей, интегрированный в панель. Основной интерфейс системы MBUX</p>
+                </div>
+                
+                <div class="screen-card optional">
+                    <div class="screen-header">
+                        <div class="screen-size">12.3"</div>
+                        <h4>Экран пассажира</h4>
+                    </div>
+                    <p>Опциональный дисплей для пассажира с функциями развлечения и настройки</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="interior-features">
+            <div class="features-grid">
+                <div class="feature-card positive">
+                    <h4><i class="fas fa-plus-circle"></i> Сильные стороны</h4>
+                    <ul>
+                        <li>Высококачественные материалы отделки</li>
+                        <li>Просторный салон с отличной эргономикой</li>
+                        <li>Передние сиденья с множеством регулировок</li>
+                        <li>Качественная сборка и отделка</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card negative">
+                    <h4><i class="fas fa-minus-circle"></i> Слабые стороны</h4>
+                    <ul>
+                        <li>Очень скромный багажник (360 литров)</li>
+                        <li>Избыток экранов ("эффект магазина электроники")</li>
+                        <li>Сложная система пакетов опций</li>
+                        <li>Ограниченное телескопирование руля</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="materials-info">
+            <h3><i class="fas fa-palette"></i> Качество материалов</h3>
+            <div class="materials-list">
+                <div class="material-item">
+                    <h4><i class="fas fa-leather"></i> Базовая отделка</h4>
+                    <p>Высококачественная искусственная кожа Artico</p>
+                </div>
+                <div class="material-item">
+                    <h4><i class="fas fa-gem"></i> Опциональные материалы</h4>
+                    <p>Натуральная кожа различных сортов, дерево, металл</p>
+                </div>
+                <div class="material-item">
+                    <h4><i class="fas fa-lightbulb"></i> Подсветка</h4>
+                    <p>Ambient Light с множеством цветов и анимаций</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tech-safety-section">
+        <h2><i class="fas fa-shield-alt"></i> Технологичность и безопасность</h2>
+        
+        <div class="tech-intro">
+            <p>E-Class 2025 года – один из технологических лидеров сегмента с высшим рейтингом безопасности "Top Safety Pick+" от IIHS.</p>
+        </div>
+        
+        <div class="safety-features">
+            <h3><i class="fas fa-car-crash"></i> Системы помощи водителю</h3>
+            
+            <div class="safety-grid">
+                <div class="safety-category">
+                    <h4><i class="fas fa-check-circle"></i> Стандартное оснащение</h4>
+                    <ul>
+                        <li>Автоматическое экстренное торможение</li>
+                        <li>Распознавание пешеходов и велосипедистов</li>
+                        <li>Система предупреждения о выходе из полосы</li>
+                        <li>Мониторинг слепых зон</li>
+                        <li>Камеры кругового обзора</li>
+                    </ul>
+                </div>
+                
+                <div class="safety-category">
+                    <h4><i class="fas fa-star"></i> Опциональные системы</h4>
+                    <ul>
+                        <li>Продвинутый адаптивный круиз-контроль</li>
+                        <li>Функция частичного автономного движения</li>
+                        <li>Автоматическое перестроение</li>
+                        <li>Доведение до ограничения скорости</li>
+                        <li>Активная помощь при парковке</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mbux-system">
+            <h3><i class="fas fa-microchip"></i> Инфотейнмент MBUX</h3>
+            <div class="mbux-content">
+                <div class="mbux-features">
+                    <div class="mbux-feature">
+                        <i class="fab fa-apple"></i>
+                        <span>Беспроводной Apple CarPlay</span>
+                    </div>
+                    <div class="mbux-feature">
+                        <i class="fab fa-android"></i>
+                        <span>Беспроводной Android Auto</span>
+                    </div>
+                    <div class="mbux-feature">
+                        <i class="fas fa-microphone"></i>
+                        <span>Голосовое управление</span>
+                    </div>
+                    <div class="mbux-feature">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Навигация с обновлениями онлайн</span>
+                    </div>
+                    <div class="mbux-feature optional">
+                        <i class="fas fa-camera"></i>
+                        <span>Камера для селфи (опция)</span>
+                    </div>
+                    <div class="mbux-feature optional">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Проекционный дисплей (опция)</span>
+                    </div>
+                </div>
+                
+                <div class="mbux-note">
+                    <p><strong>Примечание:</strong> Интерфейс MBUX требует привыкания из-за обилия функций и настроек.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="safety-rating">
+            <div class="rating-content">
+                <div class="rating-badge">
+                    <h4>IIHS Top Safety Pick+</h4>
+                    <p>Высший рейтинг безопасности</p>
+                </div>
+                <div class="rating-details">
+                    <p>E-Class 2025 получил высшую оценку от Insurance Institute for Highway Safety. В стандарт входит передняя центральная подушка безопасности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="specifications-section">
+        <h2><i class="fas fa-cogs"></i> Технические характеристики</h2>
+        
+        <div class="engine-models">
+            <h3><i class="fas fa-engine"></i> Линейка двигателей</h3>
+            
+            <div class="engine-cards">
+                <div class="engine-card">
+                    <div class="engine-header">
+                        <h4>E 350</h4>
+                        <span class="engine-type">Базовый</span>
+                    </div>
+                    <div class="engine-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">Двигатель</span>
+                            <span class="spec-value">2.0L 4-цилиндровый турбо</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Мощность</span>
+                            <span class="spec-value">255 л.с. + 23 л.с. (гибрид)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Крутящий момент</span>
+                            <span class="spec-value">400 Нм + 200 Нм (гибрид)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Разгон 0-100 км/ч</span>
+                            <span class="spec-value">6.0 сек</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Привод</span>
+                            <span class="spec-value">RWD / 4MATIC (опция)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Расход</span>
+                            <span class="spec-value">9.8-10.4 л/100км</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-header">
+                        <h4>E 450 / All-Terrain</h4>
+                        <span class="engine-type">Средний</span>
+                    </div>
+                    <div class="engine-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">Двигатель</span>
+                            <span class="spec-value">3.0L 6-цилиндровый турбо</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Мощность</span>
+                            <span class="spec-value">375 л.с. + 23 л.с. (гибрид)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Крутящий момент</span>
+                            <span class="spec-value">500 Нм + 200 Нм (гибрид)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Разгон 0-100 км/ч</span>
+                            <span class="spec-value">4.5 сек</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Привод</span>
+                            <span class="spec-value">4MATIC (стандарт)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Расход</span>
+                            <span class="spec-value">~10.4 л/100км</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="engine-card amg">
+                    <div class="engine-header">
+                        <h4>AMG E 53 PHEV</h4>
+                        <span class="engine-type">Топовый</span>
+                    </div>
+                    <div class="engine-specs">
+                        <div class="spec-row">
+                            <span class="spec-label">Двигатель</span>
+                            <span class="spec-value">3.0L 6-цил. турбо + электромотор</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Мощность</span>
+                            <span class="spec-value">577-604 л.с.</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Разгон 0-100 км/ч</span>
+                            <span class="spec-value">3.7 сек</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Электрозапас хода</span>
+                            <span class="spec-value">64 км</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Быстрая зарядка</span>
+                            <span class="spec-value">80% за 20 мин</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Привод</span>
+                            <span class="spec-value">4MATIC+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="transmission-suspension">
+            <h3><i class="fas fa-car-side"></i> Трансмиссия и подвеска</h3>
+            
+            <div class="ts-grid">
+                <div class="ts-card">
+                    <h4><i class="fas fa-exchange-alt"></i> Трансмиссия</h4>
+                    <p><strong>E 350 / E 450:</strong> 9-ступенчатая АКПП 9G-TRONIC</p>
+                    <p><strong>AMG E 53:</strong> АКПП AMG SPEEDSHIFT TCT 9G</p>
+                </div>
+                
+                <div class="ts-card">
+                    <h4><i class="fas fa-car-bump"></i> Подвеска</h4>
+                    <p><strong>Стандартная:</strong> Винтовые пружины (хороший комфорт)</p>
+                    <p><strong>Опциональная:</strong> Пневматическая с адаптивными амортизаторами</p>
+                </div>
+                
+                <div class="ts-card">
+                    <h4><i class="fas fa-tachometer-alt"></i> Управляемость</h4>
+                    <p>Настроена на комфорт и уверенность. Отличная курсовая устойчивость. Задние рулевые колеса (опция) улучшают маневренность.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comparison-table">
+            <h3><i class="fas fa-balance-scale"></i> Сравнение характеристик</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Параметр</th>
+                        <th>E 350</th>
+                        <th>E 450</th>
+                        <th>AMG E 53 PHEV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Тип двигателя</td>
+                        <td>2.0L 4-цил. турбо</td>
+                        <td>3.0L 6-цил. турбо</td>
+                        <td>3.0L 6-цил. турбо + электромотор</td>
+                    </tr>
+                    <tr>
+                        <td>Мощность</td>
+                        <td>255 + 23 л.с.</td>
+                        <td>375 + 23 л.с.</td>
+                        <td>577-604 л.с.</td>
+                    </tr>
+                    <tr>
+                        <td>Крутящий момент</td>
+                        <td>400 + 200 Нм</td>
+                        <td>500 + 200 Нм</td>
+                        <td>750 Нм</td>
+                    </tr>
+                    <tr>
+                        <td>Разгон 0-100 км/ч</td>
+                        <td>6.0 сек</td>
+                        <td>4.5 сек</td>
+                        <td>3.7 сек</td>
+                    </tr>
+                    <tr>
+                        <td>Привод</td>
+                        <td>RWD / AWD</td>
+                        <td>AWD</td>
+                        <td>AWD+</td>
+                    </tr>
+                    <tr>
+                        <td>Расход топлива</td>
+                        <td>9.8-10.4 л/100км</td>
+                        <td>~10.4 л/100км</td>
+                        <td>Электрический + ДВС</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="conclusion-section">
+        <h2><i class="fas fa-check-circle"></i> Заключение</h2>
+        
+        <div class="conclusion-content">
+            <div class="summary">
+                <h3>Вердикт обзора</h3>
+                <p>Mercedes-Benz E-Class 2025 года подтверждает свой статус одного из самых желанных автомобилей в премиальном бизнес-сегменте. Несмотря на отдельные минусы, он остается выдающимся предложением для тех, кто ищет роскошный, технологически насыщенный и комфортабельный седан.</p>
+                
+                <div class="key-takeaway">
+                    <h4><i class="fas fa-lightbulb"></i> Ключевой вывод</h4>
+                    <p>E-Class 2025 идеально подходит для бизнес-клиентов, ценящих сочетание традиционных ценностей Mercedes (комфорт, качество, безопасность) с цифровой революцией. Это автомобиль, который продолжает задавать высокую планку в своем классе.</p>
+                </div>
+            </div>
+            
+            <div class="pros-cons-grid">
+                <div class="pros-card">
+                    <h4><i class="fas fa-thumbs-up"></i> Сильные стороны</h4>
+                    <ul>
+                        <li>Революционный интерьер с тремя экранами</li>
+                        <li>Эталонный комфорт (особенно с пневмоподвеской)</li>
+                        <li>Сбалансированная гамма двигателей</li>
+                        <li>Высокий уровень безопасности (IIHS Top Safety Pick+)</li>
+                        <li>Статусный и элегантный дизайн</li>
+                        <li>Просторный салон с качественными материалами</li>
+                    </ul>
+                </div>
+                
+                <div class="cons-card">
+                    <h4><i class="fas fa-thumbs-down"></i> Слабые стороны</h4>
+                    <ul>
+                        <li>Очень тесный багажник (360 л)</li>
+                        <li>Сложная система пакетов опций</li>
+                        <li>Спорный дизайн интерьера с обилием экранов</li>
+                        <li>Высокая начальная цена</li>
+                        <li>Доплата за полный привод на базовой модели</li>
+                        <li>Интерфейс MBUX требует привыкания</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="target-audience">
+                <h3><i class="fas fa-users"></i> Целевая аудитория</h3>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h4><i class="fas fa-user-tie"></i> Бизнес-клиенты</h4>
+                        <p>Корпоративные пользователи, ценящие статус и комфорт</p>
+                    </div>
+                    <div class="audience-card">
+                        <h4><i class="fas fa-family"></i> Семьи</h4>
+                        <p>Требовательные семьи, нуждающиеся в комфорте и безопасности</p>
+                    </div>
+                    <div class="audience-card">
+                        <h4><i class="fas fa-road"></i> Автопутешественники</h4>
+                        <p>Любители дальних поездок, ценящие комфорт и технологии</p>
+                    </div>
+                    <div class="audience-card">
+                        <h4><i class="fas fa-bolt"></i> Техноэнтузиасты</h4>
+                        <p>Поклонники передовых автомобильных технологий</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="final-rating">
+                <div class="rating-overall">
+                    <h4>Общая оценка</h4>
+                    <div class="rating-score">8.7<span>/10</span></div>
+                    <div class="rating-breakdown">
+                        <div class="rating-category">
+                            <span>Дизайн и стиль</span>
+                            <span class="category-score">9.0</span>
+                        </div>
+                        <div class="rating-category">
+                            <span>Интерьер и комфорт</span>
+                            <span class="category-score">9.5</span>
+                        </div>
+                        <div class="rating-category">
+                            <span>Технологии</span>
+                            <span class="category-score">9.8</span>
+                        </div>
+                        <div class="rating-category">
+                            <span>Ходовые качества</span>
+                            <span class="category-score">8.5</span>
+                        </div>
+                        <div class="rating-category">
+                            <span>Практичность</span>
+                            <span class="category-score">7.0</span>
+                        </div>
+                        <div class="rating-category">
+                            <span>Цена/Качество</span>
+                            <span class="category-score">8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-footer">
+        <div class="pricing-info">
+            <h4><i class="fas fa-tag"></i> Ценовая политика</h4>
+            <p><strong>Стартовая цена:</strong> От $60,000 (E 350 RWD)</p>
+            <p><strong>Полный привод:</strong> +$2,500 (опция на E 350)</p>
+            <p><strong>AMG E 53 PHEV:</strong> От $85,000+</p>
+            <p><strong>Опции и пакеты:</strong> Могут увеличить стоимость на 20-30%</p>
+        </div>
+        
+        <div class="availability-info">
+            <h4><i class="fas fa-shipping-fast"></i> Доступность</h4>
+            <p><strong>Начало продаж:</strong> Конец 2024 года</p>
+            <p><strong>Первые поставки:</strong> Начало 2025 года</p>
+            <p><strong>Рынки:</strong> Европа, США, Азия, Ближний Восток</p>
+            <p><strong>Производство:</strong> Заводы в Германии и США</p>
+        </div>
+        
+        <div class="recommendation">
+            <h4><i class="fas fa-award"></i> Рекомендация редакции</h4>
+            <p>Mercedes-Benz E-Class 2025 рекомендуется как один из лучших бизнес-седанов на рынке для тех, кто ценит технологии, комфорт и статус. Однако перед покупкой стоит внимательно изучить опции и быть готовым к высокой итоговой цене.</p>
+        </div>
+    </div>
+</div>
         `
     },
     {
@@ -31,9 +648,397 @@ const blogData = [
         views: 2156,
         likes: 489,
         fullContent: `
-            <h2>Будущее мобильности</h2>
-            <p>Концепт Vision AVTR представляет революционный подход к дизайну и технологиям автономного вождения.</p>
-            <p>Автомобиль использует бионический дизайн, вдохновленный природой, и полностью автономную систему управления.</p>
+           <header class="article-header-content">
+   
+</header>
+
+<div class="article-body">
+    <h1>1 миллион долларов за штуку: Mercedes-Benz Vision AVTR - роскошь будущего!</h1>
+    
+    <div class="article-subtitle">
+        <div class="concept-info">
+            <span><i class="fas fa-star"></i> Концепт-кар будущего</span>
+            <span><i class="fas fa-film"></i> Совместно с Джеймсом Кэмероном</span>
+            <span><i class="fas fa-leaf"></i> Экологический манифест</span>
+        </div>
+    </div>
+    
+    <div class="intro-paragraph">
+        <div class="futuristic-intro">
+            <h2><i class="fas fa-crystal-ball"></i> Mercedes-Benz Vision AVTR: путешествие в будущее на колесах</h2>
+            <p>В 2020 году мир увидел концепт-кар Mercedes-Benz Vision AVTR, ставший настоящим откровением. Этот футуристичный автомобиль, созданный в сотрудничестве с Джеймсом Кэмероном, режиссером фильма "Аватар", не только поражает своим дизайном, но и демонстрирует передовые технологии, способные изменить наше представление о транспорте.</p>
+        </div>
+    </div>
+    
+    <div class="main-concept-image">
+        <img src="AVTR/a.png" alt="Mercedes-Benz Vision AVTR концепт">
+        <p class="image-caption">Mercedes-Benz Vision AVTR — симбиоз человека, природы и технологий</p>
+    </div>
+    
+    <div class="price-tag">
+        <div class="price-content">
+            <div class="price-amount">
+                <i class="fas fa-dollar-sign"></i>
+                <span class="price-value">1,000,000</span>
+            </div>
+            <p class="price-description">Ориентировочная стоимость концепта</p>
+        </div>
+    </div>
+    
+    <div class="design-section">
+        <h2><i class="fas fa-paint-brush"></i> Дизайн, рожденный из симбиоза</h2>
+        
+        <div class="design-content">
+            <div class="design-text">
+                <p>Vision AVTR – это воплощение симбиоза человека, природы и технологий. Плавные линии кузова, напоминающие о живых существах, 33 "лепестка" на задней части, имитирующие чешую рептилий, – все это создает ощущение единения с естественным миром.</p>
+                
+                <div class="design-features">
+                    <div class="feature-item">
+                        <h4><i class="fas fa-feather-alt"></i> Бионический дизайн</h4>
+                        <p>Формы, вдохновленные природой и фильмом "Аватар"</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fas fa-scroll"></i> 33 адаптивных лепестка</h4>
+                        <p>Интерактивные элементы на задней части кузова</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fas fa-water"></i> Плавные линии</h4>
+                        <p>Кузов без острых углов, напоминающий живые организмы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="design-image">
+                <img src="AVTR/lepest.png" alt="Дизайн Vision AVTR">
+                <p class="image-caption">33 адаптивных лепестка на задней части концепта</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sustainability-section">
+        <h2><i class="fas fa-leaf"></i> Экологичность на первом месте</h2>
+        
+        <div class="sustainability-content">
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h4>Переработанные материалы</h4>
+                    <p>Отделка из переработанных океанских отходов</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Веганская кожа Dinamica</h4>
+                    <p>Сиденья из экологичной искусственной кожи</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Электропривод</h4>
+                    <p>Полностью электрическая силовая установка</p>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h4>Долгий запас хода</h4>
+                    <p>700 км на одном заряде батареи</p>
+                </div>
+            </div>
+            
+            <div class="tech-specs">
+                <div class="spec-card">
+                    <h3>Технические характеристики</h3>
+                    <div class="specs-list">
+                        <div class="spec-item">
+                            <span class="spec-label">Мощность</span>
+                            <span class="spec-value">470 л.с.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Запас хода</span>
+                            <span class="spec-value">700 км</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Рекуперация</span>
+                            <span class="spec-value">Активная система</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Материалы</span>
+                            <span class="spec-value">100% переработанные</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="innovations-section">
+        <h2><i class="fas fa-lightbulb"></i> Инновации, ведущие в будущее</h2>
+        
+        <div class="innovations-intro">
+            <p>Vision AVTR демонстрирует ряд революционных технологий, которые могут стать нормой в будущем.</p>
+        </div>
+        
+        <div class="innovation-cards">
+            <div class="innovation-card">
+                <div class="innovation-header">
+                    <div class="innovation-icon">
+                        <i class="fas fa-hand-pointer"></i>
+                    </div>
+                    <h3>Управление жестами</h3>
+                </div>
+                <div class="innovation-content">
+                    <p>Вместо руля используется многофункциональный джойстик, а управление системами осуществляется интуитивно понятными жестами.</p>
+                    <div class="innovation-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Руля в автомобиле нет</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="innovation-card">
+                <div class="innovation-header">
+                    <div class="innovation-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Автономное вождение</h3>
+                </div>
+                <div class="innovation-content">
+                    <p>Автомобиль способен самостоятельно двигаться и ориентироваться на дорогах, освобождая время для других занятий.</p>
+                </div>
+            </div>
+            
+            <div class="innovation-card">
+                <div class="innovation-header">
+                    <div class="innovation-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Биометрическая аутентификация</h3>
+                </div>
+                <div class="innovation-content">
+                    <p>Доступ к автомобилю и его функциям осуществляется по индивидуальным биометрическим данным.</p>
+                </div>
+            </div>
+            
+            <div class="innovation-card">
+                <div class="innovation-header">
+                    <div class="innovation-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Интерактивная связь</h3>
+                </div>
+                <div class="innovation-content">
+                    <p>Автомобиль "общается" с водителем, используя пульсацию и подсветку элементов интерьера.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="interior-showcase">
+            <div class="interior-content">
+                <div class="interior-text">
+                    <h3><i class="fas fa-gamepad"></i> Центральный джойстик</h3>
+                    <p>Управление автомобилем поддерживается с помощью джойстика по центру салона. Это революционный подход к эргономике и управлению транспортным средством.</p>
+                </div>
+                <div class="interior-image">
+                    <img src="AVTR/inter.png" alt="Интерьер Vision AVTR с джойстиком">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="manifesto-section">
+        <h2><i class="fas fa-scroll"></i> Манифест будущего</h2>
+        
+        <div class="manifesto-content">
+            <div class="manifesto-statements">
+                <div class="statement-card">
+                    <div class="statement-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Гармония с природой</h4>
+                    <p>Будущее, где человек и природа живут в гармонии</p>
+                </div>
+                
+                <div class="statement-card">
+                    <div class="statement-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h4>Экологичный транспорт</h4>
+                    <p>Транспорт становится более экологичным, комфортным и безопасным</p>
+                </div>
+                
+                <div class="statement-card">
+                    <div class="statement-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Технологии для людей</h4>
+                    <p>Технологии меняют наш мир к лучшему</p>
+                </div>
+            </div>
+            
+            <div class="manifesto-note">
+                <p><strong>Хотя Vision AVTR – это концепт-кар, и его серийное производство не запланировано, он уже сейчас оказывает влияние на будущее дизайна, технологий и экологичности автомобилей.</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="impact-section">
+        <h2><i class="fas fa-chart-line"></i> Влияние Vision AVTR на индустрию</h2>
+        
+        <div class="impact-content">
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h3><i class="fas fa-palette"></i> Дизайн</h3>
+                    <p>Футуристичный дизайн Vision AVTR вдохновляет дизайнеров других автопроизводителей. Бионический подход становится новым трендом.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <h3><i class="fas fa-microchip"></i> Технологии</h3>
+                    <p>Многие технологии, представленные в Vision AVTR, уже сейчас тестируются на других автомобилях Mercedes-Benz.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <h3><i class="fas fa-tree"></i> Экологичность</h3>
+                    <p>Vision AVTR демонстрирует, что автомобили могут быть не только экологичными, но и красивыми, что меняет восприятие "зеленых" технологий.</p>
+                </div>
+            </div>
+            
+            <div class="milestone-note">
+                <h4><i class="fas fa-landmark"></i> Важная веха</h4>
+                <p>Vision AVTR – это амбициозный проект, который может стать важной вехой в развитии автомобильной индустрии, задавая направления на десятилетия вперед.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="future-section">
+        <h2><i class="fas fa-crystal-ball"></i> Будущее, которое уже начинается</h2>
+        
+        <div class="future-content">
+            <div class="future-technologies">
+                <h3><i class="fas fa-brain"></i> Следующие шаги эволюции</h3>
+                
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Интерфейс "мозг-компьютер"</h4>
+                        </div>
+                        <p>Vision AVTR может стать первым шагом к созданию автомобилей, управляемых силой мысли</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-header">
+                            <i class="fas fa-spider"></i>
+                            <h4>Биомимикрические материалы</h4>
+                        </div>
+                        <p>Использование материалов, имитирующих свойства живых существ, может сделать автомобили более легкими и прочными</p>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-header">
+                            <i class="fas fa-robot"></i>
+                            <h4>Искусственный интеллект</h4>
+                        </div>
+                        <p>ИИ может сделать автомобили более автономными и безопасными, предугадывая действия водителя и дорожную ситуацию</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="future-vision">
+                <div class="vision-content">
+                    <h3><i class="fas fa-eye"></i> Новая философия Mercedes-Benz</h3>
+                    <div class="vision-points">
+                        <div class="vision-point">
+                            <h4><i class="fas fa-paint-roller"></i> Дизайн будущего</h4>
+                            <p>Дизайн, вдохновленный природой, может стать доминирующим трендом в будущем</p>
+                        </div>
+                        <div class="vision-point">
+                            <h4><i class="fas fa-crown"></i> Лидерство в инновациях</h4>
+                            <p>Vision AVTR показывает, что Mercedes-Benz является лидером в области инноваций</p>
+                        </div>
+                        <div class="vision-point">
+                            <h4><i class="fas fa-heart"></i> Вдохновение для людей</h4>
+                            <p>Vision AVTR вдохновляет людей мечтать о будущем, где человек и природа живут в гармонии</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conclusion-section">
+        <h2><i class="fas fa-check-circle"></i> Заключение: символ будущего</h2>
+        
+        <div class="conclusion-content">
+            <div class="summary-card">
+                <h3><i class="fas fa-gem"></i> Что такое Vision AVTR?</h3>
+                <p>Mercedes-Benz Vision AVTR – это не просто концепт-кар, это символ будущего, которое мы можем создать. Это автомобиль, который сочетает в себе передовые технологии, экологичность и красоту.</p>
+            </div>
+            
+            <div class="key-messages">
+                <div class="message-card">
+                    <h4><i class="fas fa-sync-alt"></i> Симбиоз технологий</h4>
+                    <p>Гармоничное сочетание человеческого, природного и технологического</p>
+                </div>
+                
+                <div class="message-card">
+                    <h4><i class="fas fa-seedling"></i> Экологическая ответственность</h4>
+                    <p>Доказательство того, что роскошь и экологичность совместимы</p>
+                </div>
+                
+                <div class="message-card">
+                    <h4><i class="fas fa-road"></i> Дорожная карта индустрии</h4>
+                    <p>Визуализация того, куда движется автомобильная промышленность</p>
+                </div>
+            </div>
+            
+            <div class="final-statement">
+                <div class="statement-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Vision AVTR – это не просто автомобиль, это символ будущего, которое мы можем создать. Будущее уже здесь, и Vision AVTR – это его яркое подтверждение.</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-footer">
+        <div class="article-summary">
+            <h4><i class="fas fa-list-check"></i> Ключевые аспекты Vision AVTR</h4>
+            <div class="summary-points">
+                <div class="point">
+                    <i class="fas fa-check"></i>
+                    <span>Бионический дизайн, вдохновленный природой и фильмом "Аватар"</span>
+                </div>
+                <div class="point">
+                    <i class="fas fa-check"></i>
+                    <span>Экологичные материалы и полностью электрическая силовая установка</span>
+                </div>
+                <div class="point">
+                    <i class="fas fa-check"></i>
+                    <span>Революционные технологии управления без руля</span>
+                </div>
+                <div class="point">
+                    <i class="fas fa-check"></i>
+                    <span>Влияние на будущее автомобильного дизайна и технологий</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="collaboration-info">
+            <h4><i class="fas fa-handshake"></i> О сотрудничестве</h4>
+            <p><strong>Партнер:</strong> Джеймс Кэмерон, режиссер фильма "Аватар"</p>
+            <p><strong>Цель:</strong> Создание видения транспорта будущего</p>
+            <p><strong>Презентация:</strong> CES 2020 (Consumer Electronics Show)</p>
+        </div>
+    </div>
+</div>
         `
     },
     {

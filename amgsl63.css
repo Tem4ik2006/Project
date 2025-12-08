@@ -4,7 +4,7 @@
     padding: 1rem;
     background: linear-gradient(135deg, var(--bg-lighter) 0%, var(--bg-light) 100%);
     border-radius: 8px;
-    border-left: 4px solid #ff0000;
+    border-left: 4px solid var(--primary-color);
 }
 
 .author-info {
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #ff0000;
+   color: var(--primary-color);
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid rgba(255, 0, 0, 0.3);
@@ -144,7 +144,7 @@
 }
 
 .comparison-table th {
-    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--text-light);
     padding: 1rem;
     text-align: left;
@@ -562,7 +562,7 @@
 }
 
 .specs-table th {
-    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--text-light);
     padding: 1.5rem;
     text-align: center;
